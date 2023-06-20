@@ -89,7 +89,11 @@ header >h3{
 main{
     border: solid orange;
     /*background-color: rgb(255, 255, 255, 0.6);*/
+    display: flex;
+    flex-direction: column;
     min-height: 73vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .sectionAbout{
@@ -101,7 +105,7 @@ main{
 }
 
 .sectionAbout img{
-    height: 20px;
+    height: 80%;
 }
 /*Aqui empieza el footer********************************************************/
 footer{
