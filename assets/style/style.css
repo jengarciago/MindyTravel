@@ -1,4 +1,4 @@
-*{
+*:not(dd){
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body{
 }
 /*Aqui empieza la barra de navegacion***************************************/
 nav{
-    border: solid red;
+    /* border: solid red; */
     background-color: rgb(0, 0, 0, 0.5);
     height: 5vh;
     position: sticky;
@@ -26,7 +26,7 @@ nav{
 }
 
 .menu{
-    border: solid yellow;
+    /* border: solid yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ nav{
 }
 
 .logo{
-    border: solid yellow;
+    /* border: solid yellow; */
     height: 100%;
     margin-right: 2vw;
 }
@@ -63,7 +63,7 @@ nav{
 /*Aqui termina la barra de navegacion******************************************/
 /*Aqui comienza el header******************************************************/
 header{
-    border: solid #f70fff;
+    /* border: solid #f70fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,22 +72,22 @@ header{
 }
 
 header >h2{
-    border: solid #12d6df;
+    /* border: solid #12d6df; */
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
 header >h3{
-    border: solid #12d6df;
+    /* border: solid #12d6df; */
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 /*Aqui termina el header*******************************************************/
-
+/*Aqui inicia el body de todas las paginas**************************/
 main{
-    border: solid orange;
+    /* border: solid orange; */
     /*background-color: rgb(255, 255, 255, 0.6);*/
     display: flex;
     flex-direction: column;
@@ -97,12 +97,12 @@ main{
 }
 
 .imgIndex{
-    border: solid green;
-    height: 40vh;
+    /* border: solid green; */
+    width: 50vw;
 }
 
 .divIndex{
-    border: solid green;
+    /* border: solid green; */
     display: flex;
     min-height: 20vh;
     width: 80vw;
@@ -112,20 +112,20 @@ main{
 }
 
 .divIndex >p{
-    border: solid yellow;
+    /* border: solid yellow; */
     width: 50vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
 .divIndex >img{
-    border: solid #12d6df;
+    /* border: solid #12d6df; */
     height: 16vh;
     margin-right: 2vw;
 }
 
 .sectionAbout{
-    border: solid green;
+    /* border: solid green; */
     display: flex;
     min-height: 20vh;
     width: 80vw;
@@ -135,18 +135,18 @@ main{
 }
 
 .sectionAbout >img{
-    border: solid #12d6df;
+    /* border: solid #12d6df; */
     height: 16vh;
     margin-right: 2vw;
 }
 
 .sectionAbout >div{
-    border: solid yellow;
+    /* border: solid yellow; */
     width: 50vw;
 }
 
 .sectionAbout h3{
-    border: solid #f70fff;
+    /* border: solid #f70fff; */
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
@@ -157,22 +157,135 @@ main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
-/*Aqui empieza el footer********************************************************/
-footer{
-    border: solid green;
-    height: 15vh;
+
+table, tr, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    height: 10vh;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th{
+    font-size: xx-large;
+}
+
+.topic{
+    width: 30vw;
+    background-color: rgb(247, 15, 255, 0.2);
+}
+
+.information{
+    width: 9vw;
+    background-color: rgb(18, 214, 223, 0.2);
+}
+
+caption{
+    caption-side: bottom;
+    text-align: start;
+    margin-top: 1vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.benefitsTips{
+    /* border: solid green; */
     display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benefitsTips >div{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.benefitsTips img{
+    /* border: solid #12d6df; */
+    height: 30vh;
+    margin-right: 5vw;
+}
+
+ol{
+    /* border: solid yellow; */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
+ol li{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ol >li{
+    color: #12d6df;
+    font-size: x-large;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul >li{
+    margin-top: 1vh;
+    font-size: large;
+}
+
+.mainContact >img{
+    /* border: solid green; */
+    width: 35vw;
+}
+
+.mainContact >p{
+    /* border: solid green; */
+    width: 70vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-top: 1vh;
+}
+
+.mainContact >div{
+    /* border: solid green; */
+    width: 70vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContact a{
+    text-decoration: none;
+    color: white;
+}
+
+.mainContact a:hover{
+    text-decoration: none;
+    color: #12d6df;
+}
+/*Aqui termina el body de todas las paginas********************/
+/*Aqui empieza el footer********************************************************/
+footer{
+    /* border: solid green; */
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+
 .contact{
-    border: solid powderblue;
+    /* border: solid powderblue; */
     height: 100%;
     width: 25vw;
 }
 
 .way_to_contact{
-    border: solid darkblue;
+    /* border: solid darkblue; */
     height: 33%;
     display: flex;
     align-items: center;
@@ -195,13 +308,13 @@ footer{
 }
 
 footer >p{
-    border: solid honeydew;
+    /* border: solid honeydew; */
     color: white;
     align-self: flex-end;
 }
 
 .slogan{
-    border: solid orange;
+    /* border: solid orange; */
     color: #12d6df;
     margin-right: 4.5vw;
     align-self: center;
