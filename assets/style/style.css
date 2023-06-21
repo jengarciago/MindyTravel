@@ -96,16 +96,66 @@ main{
     align-items: center;
 }
 
+.imgIndex{
+    border: solid green;
+    height: 40vh;
+}
+
+.divIndex{
+    border: solid green;
+    display: flex;
+    min-height: 20vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.divIndex >p{
+    border: solid yellow;
+    width: 50vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.divIndex >img{
+    border: solid #12d6df;
+    height: 16vh;
+    margin-right: 2vw;
+}
+
 .sectionAbout{
     border: solid green;
     display: flex;
-    height: 20vh;
+    min-height: 20vh;
     width: 80vw;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.sectionAbout img{
-    height: 80%;
+.sectionAbout >img{
+    border: solid #12d6df;
+    height: 16vh;
+    margin-right: 2vw;
+}
+
+.sectionAbout >div{
+    border: solid yellow;
+    width: 50vw;
+}
+
+.sectionAbout h3{
+    border: solid #f70fff;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 3vh;
+}
+
+.sectionAbout p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 /*Aqui empieza el footer********************************************************/
 footer{
