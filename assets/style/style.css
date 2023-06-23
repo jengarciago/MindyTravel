@@ -17,26 +17,28 @@ body{
 nav{
     /* border: solid red; */
     background-color: rgb(0, 0, 0, 0.5);
-    height: 5vh;
+    min-height: 5vh;
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 13vw;
     align-items: center;
 }
 
 .menu{
     /* border: solid yellow; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 6vw;
     align-items: center;
     flex-wrap: wrap;
     width: 70vw;
     height: 100%;
-    margin-left: 2vw;
 }
 
 .menu a{
+    /* border: solid white; */
     font-size: 2vh;
     text-decoration: none;
     color: #f70fff;
@@ -54,11 +56,10 @@ nav{
 .logo{
     /* border: solid yellow; */
     height: 100%;
-    margin-right: 2vw;
 }
 
 .logo img{
-    height: 100%;
+    height: 5vh;
 }
 /*Aqui termina la barra de navegacion******************************************/
 /*Aqui comienza el header******************************************************/
@@ -71,60 +72,71 @@ header{
     /*background-color: rgb(255, 255, 255, 0.6);*/
 }
 
-header >h2{
+header >h2, header >h3{
     /* border: solid #12d6df; */
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    height: 40%;
+    font-size: 2vh;
 }
 
 header >h3{
-    /* border: solid #12d6df; */
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    font-size: 1.5vh;
 }
+
 /*Aqui termina el header*******************************************************/
 /*Aqui inicia el body de todas las paginas**************************/
 main{
     /* border: solid orange; */
-    /*background-color: rgb(255, 255, 255, 0.6);*/
+    min-height: 72.6vh;
+}
+
+.indexMain {
     display: flex;
     flex-direction: column;
-    min-height: 73vh;
     justify-content: center;
     align-items: center;
+    gap: 2vh;
 }
 
-.imgIndex{
+.indexMain >img{
     /* border: solid green; */
-    width: 50vw;
+    width: 40vw;
 }
 
-.divIndex{
+.indexMain >div{
     /* border: solid green; */
     display: flex;
-    min-height: 20vh;
-    width: 80vw;
+    width: 70vw;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3vw;
     flex-wrap: wrap;
 }
 
-.divIndex >p{
+.indexMain p{
     /* border: solid yellow; */
-    width: 50vw;
+    width: 45vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    text-align: justify;
+    padding: 0.5rem;
 }
 
-.divIndex >img{
-    /* border: solid #12d6df; */
-    height: 16vh;
-    margin-right: 2vw;
+#imgWindow{
+    /* border: solid yellow; */
+    height: 40vh;
 }
 
-.sectionAbout{
+.aboutUsMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.aboutUsMain >section{
     /* border: solid green; */
     display: flex;
     min-height: 20vh;
@@ -132,33 +144,43 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 5vh;
 }
 
-.sectionAbout >img{
-    /* border: solid #12d6df; */
-    height: 16vh;
-    margin-right: 2vw;
-}
-
-.sectionAbout >div{
+.aboutUsMain img{
     /* border: solid yellow; */
-    width: 50vw;
+    height: 25vh;
 }
 
-.sectionAbout h3{
-    /* border: solid #f70fff; */
+.aboutUsMain div{
+    /* border: solid yellow; */
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsMain h3{
+    /* border: solid blue; */
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    margin: 3vh;
+    color: #12d6df;
 }
 
-.sectionAbout p{
+.aboutUsMain p{
+    /* border: solid blue; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    text-align: justify;
+    padding: 0.5rem;
 }
 
-table, tr, th, td{
+.informationMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table, th, td{
     border: 1px solid white;
     border-collapse: collapse;
     text-align: center;
@@ -167,18 +189,27 @@ table, tr, th, td{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+table{
+    backdrop-filter: blur(10px);
+}
+
 th{
-    font-size: xx-large;
+    font-size: 2.5vh;
+    padding: 0.5rem;
+}
+
+td{
+    font-size: 2vh;
 }
 
 .topic{
-    width: 30vw;
-    background-color: rgb(247, 15, 255, 0.2);
+    width: 40vw;
+    background-color: rgb(247, 15, 255, 0.1);
 }
 
 .information{
-    width: 9vw;
-    background-color: rgb(18, 214, 223, 0.2);
+    width: 15vw;
+    background-color: rgb(18, 214, 223, 0.1);
 }
 
 caption{
@@ -188,52 +219,59 @@ caption{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.benefitsTips{
+.benefitsTipsMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.benefitsTipsMain >div{
     /* border: solid green; */
     display: flex;
     width: 80vw;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5vw;
 }
 
-.benefitsTips >div{
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-}
-
-.benefitsTips img{
-    /* border: solid #12d6df; */
-    height: 30vh;
-    margin-right: 5vw;
-}
-
-ol{
+.benefitsTipsMain img{
     /* border: solid yellow; */
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 20vw;
 }
 
-ol li{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.benefitsTipsMain ol{
+    /* border: solid yellow; */
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 ol >li{
+    /* border: solid blue; */
     color: #12d6df;
-    font-size: x-large;
-}
-
-ul{
-    list-style-type: none;
+    font-size: 2.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul >li{
-    margin-top: 1vh;
-    font-size: large;
+    /* border: solid red; */
+    list-style-type: none;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
 }
 
 .mainContact >img{
@@ -246,7 +284,7 @@ ul >li{
     width: 70vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    margin-top: 1vh;
+    text-align: justify;
 }
 
 .mainContact >div{
@@ -256,50 +294,211 @@ ul >li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .mainContact a{
     text-decoration: none;
     color: white;
+    font-size: 1.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .mainContact a:hover{
     text-decoration: none;
     color: #12d6df;
 }
+
+.raffleMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.raffleMain >section{
+    /* border: solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.raffleMain h4{
+    /* border: solid yellow; */
+    text-align: center;
+    color: #12d6df;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.raffleMain iframe{
+    /* border: solid yellow; */
+    width: 40vw;
+    height: 40vh;
+}
+
+.raffleMain >form{
+    /* border: solid green; */
+    border-radius: 2vh;
+    min-width: 30vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5vh;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(247,15,255,0.4) 0%, rgba(18,214,223,0.4) 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px rgb(18, 214, 223, 0.4);
+}
+
+::placeholder{
+    color: white;
+}
+
+.raffleMain label{
+    /* border: solid yellow; */
+    width: 85%;
+    color: #12d6df;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vh;
+}
+
+.raffleMain input, select{
+    background-color: transparent;
+    height: 2vh;
+    width: 85%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0.5vh;
+    border: 1px solid white;
+    font-size: 1.5vh;
+}
+
+option{
+    color: #f70fff;
+    background-color: rgb(18, 214, 223, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+fieldset{
+    border-radius: 0.5vh;
+    border: 1px solid white;
+    width: 85%;
+}
+
+fieldset >legend{
+    color: #12d6df;
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paymentMethod{
+    /* border: solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentMethod >div{
+    /* border: solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.paymentMethod label{
+    /* border: solid salmon; */
+    font-size: 1.5vh;
+    color: white;
+    width: 35%;
+}
+
+.paymentMethod input{
+    height: 1.5vh;
+    width: 10%;
+}
+
+textarea{
+    border: 1px solid white;
+    border-radius: 0.5vh;
+    width: 85%;
+    height: 17%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form >div{
+    /* border: solid yellow; */
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accept{
+    /* border: solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+}
+
+.accept >input{
+    width: 9%;
+    height: 1.5vh;
+}
+
+.accept >label{
+    /* border: solid salmon; */
+    color: white;
+    font-size: 1.5vh;
+}
+
+#send{
+    width: 15%;
+    background: linear-gradient(180deg, rgb(247,15,255) 0%, rgb(18,214,223) 100%);
+    border: 0;
+}
 /*Aqui termina el body de todas las paginas********************/
 /*Aqui empieza el footer********************************************************/
 footer{
     /* border: solid green; */
-    height: 15vh;
+    min-height: 15vh;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgb(0, 0, 0, 0.5);
-
 }
 
 .contact{
     /* border: solid powderblue; */
     height: 100%;
-    width: 25vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
 }
 
 .way_to_contact{
     /* border: solid darkblue; */
-    height: 33%;
+    height: 10%;
     display: flex;
     align-items: center;
+    gap: 1vw;
 }
 
 .way_to_contact img{
-    height: 70%;
-    margin-left: 2vw;
+    height: 3.5vh;
 }
 
 .way_to_contact a{
     text-decoration: none;
     color: white;
-    margin-left: 1vw;
     font-size: 1.7vh;
 }
 
@@ -308,22 +507,263 @@ footer{
 }
 
 footer >p{
-    /* border: solid honeydew; */
+    /* border: solid white; */
     color: white;
     align-self: flex-end;
+    font-size: 1.3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 25vw;
+    text-align: center;
 }
 
 .slogan{
     /* border: solid orange; */
     color: #12d6df;
-    margin-right: 4.5vw;
     align-self: center;
-    font-size: xx-large;
-    width: 25vw;
+    width: 30vw;
+    min-height: 2vh;
+    font-size: 2vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
 }
 /*Aqui termina el footer*****************************************************/
+.showData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    nav{
+        flex-direction: column;
+        gap: 1.5vh;
+    }
 
+    .menu{
+        flex-direction: column;
+        gap: 1vh;
+        order: 1;
+    }
 
+    .indexMain >img{
+        width: 95vw;
+    }
 
+    .indexMain p{
+        width: 100%;
+        letter-spacing: 0.1vw;
+        order: 1;
+    }
 
+    .benefitsTipsMain >div{
+        flex-direction: column;
+        width: 70vw;
+        gap: 2vh;
+    }
 
+    .benefitsTipsMain img{
+        width: 100%;
+    }
+
+    .benefitsTipsMain ol{
+        height: 12vh;
+    }
+
+    .mainContact >img{
+        width: 70vw;
+    }
+
+    .mainContact >p{
+        width: 80vw;
+    }
+
+    .mainContact >div{
+        width: 80vw;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .raffleMain{
+        flex-direction: column;
+    }
+
+    .raffleMain >form{
+        order: 0;
+        min-width: 50vw;
+    }
+
+    .raffleMain label{
+        text-align: center;
+    }
+
+    .paymentMethod label{
+        text-align: start;
+    }
+
+    form >div{
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .accept{
+        width: 60%;
+    }
+
+    .accept >label{
+        text-align: right;
+        width: 90%;
+    }
+
+    .raffleMain >section{
+        order: 1;
+    }
+
+    .raffleMain iframe{
+        height: 20vh;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    p{
+        letter-spacing: 0.2vw;
+    }
+    nav{
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 1vh;
+        order: 1;
+    }
+
+    .indexMain >img{
+        width: 90vw;
+    }
+
+    .indexMain >div{
+        width: 90vw;
+    }
+
+    .indexMain p{
+        width: 100%;
+        order: 1;
+    }
+
+    .aboutUsMain >section{
+        width: 100vw;
+    }
+
+    .aboutUsMain img{
+        height: 20vh;
+    }
+
+    .aboutUsMain div{
+        width: 90vw;
+        gap: 1vh;
+    }
+
+    .aboutUsMain p{
+        padding: 0;
+    }
+
+    .benefitsTipsMain >div{
+        flex-direction: column;
+        width: 90vw;
+        gap: 2vh;
+    }
+
+    .benefitsTipsMain img{
+        width: 100%;
+    }
+
+    .benefitsTipsMain ol{
+        height: 12vh;
+        width: 80%;
+    }
+
+    ol >li{
+        font-size: 2vh;
+    }
+
+    ul >li{
+        font-size: 1.5vh;
+    }
+
+    .mainContact >img{
+        width: 70vw;
+    }
+
+    .mainContact >p{
+        width: 80vw;
+    }
+
+    .mainContact >div{
+        width: 80vw;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .raffleMain{
+        flex-direction: column;
+    }
+
+    .raffleMain >form{
+        order: 0;
+        width: 90vw;
+    }
+
+    .raffleMain label{
+        text-align: center;
+    }
+
+    .paymentMethod label{
+        text-align: start;
+    }
+
+    form >div{
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .accept{
+        width: 80%;
+    }
+
+    .accept >label{
+        text-align: right;
+        width: 90%;
+    }
+
+    .raffleMain >section{
+        order: 1;
+    }
+
+    .raffleMain iframe{
+        height: 20vh;
+        width: 80vw;
+    }
+
+    footer{
+        display: none;
+        justify-content: center;
+    }
+
+    .contact{
+        width: 45%;
+    }
+
+    footer >p{
+        order: 1;
+    }
+
+    .slogan{
+        order: 0;
+        width: 45%;
+    }
+}
